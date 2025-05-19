@@ -38,10 +38,8 @@ public class AbaPresenca {
         grafico.gerarGrafico(aluno1);// gráfico individual
         grafico.gerarGrafico(aluno2);// gráfico individual
         grafico.gerarGrafico(aluno3);// gráfico individual
-        
-        
-    }
-    
+                
+    } 
 }
     
 
