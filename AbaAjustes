@@ -1,0 +1,216 @@
+package com.mycompany.projetoa3;
+import java.awt.Color;
+public class TelaConfiguracoes extends javax.swing.JFrame {
+    public TelaConfiguracoes() {
+        initComponents();
+    }
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+    private void initComponents() {
+
+        jPanel2 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jPanel8 = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
+        AjustesdoSistema = new javax.swing.JLabel();
+        SalvarAlteracoes = new javax.swing.JCheckBox();
+        TextoTema = new javax.swing.JLabel();
+        EscolherTema = new javax.swing.JComboBox<>();
+        AtivarNotificacoes = new javax.swing.JCheckBox();
+
+        jPanel2.setBackground(new java.awt.Color(204, 204, 204));
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 200, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 60, Short.MAX_VALUE)
+        );
+
+        jPanel3.setBackground(new java.awt.Color(204, 204, 204));
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 200, Short.MAX_VALUE)
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 60, Short.MAX_VALUE)
+        );
+
+        jPanel8.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel8.setAlignmentX(0.4F);
+        jPanel8.setAlignmentY(0.4F);
+        jPanel8.setPreferredSize(new java.awt.Dimension(160, 40));
+
+        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
+        jPanel8.setLayout(jPanel8Layout);
+        jPanel8Layout.setHorizontalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 160, Short.MAX_VALUE)
+        );
+        jPanel8Layout.setVerticalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 40, Short.MAX_VALUE)
+        );
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setBackground(new java.awt.Color(245, 245, 245));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        AjustesdoSistema.setBackground(new java.awt.Color(245, 245, 245));
+        AjustesdoSistema.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        AjustesdoSistema.setForeground(new java.awt.Color(51, 51, 51));
+        AjustesdoSistema.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        AjustesdoSistema.setText(" Ajustes do Sistema");
+        AjustesdoSistema.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        AjustesdoSistema.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        AjustesdoSistema.setOpaque(true);
+        jPanel1.add(AjustesdoSistema, new org.netbeans.lib.awtextra.AbsoluteConstraints(115, 65, 170, 30));
+
+        SalvarAlteracoes.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        SalvarAlteracoes.setForeground(new java.awt.Color(68, 68, 68));
+        SalvarAlteracoes.setText("Salvar alterações");
+        SalvarAlteracoes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SalvarAlteracoesActionPerformed(evt);
+            }
+        });
+        jPanel1.add(SalvarAlteracoes, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 200, 140, 20));
+
+        TextoTema.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        TextoTema.setForeground(new java.awt.Color(68, 68, 68));
+        TextoTema.setText("Tema:");
+        TextoTema.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jPanel1.add(TextoTema, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, -1, -1));
+
+        EscolherTema.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        EscolherTema.setForeground(new java.awt.Color(68, 68, 68));
+        EscolherTema.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Manhã", "Noite" }));
+        EscolherTema.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                EscolherTemaActionPerformed(evt);
+            }
+        });
+        jPanel1.add(EscolherTema, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, 100, 20));
+
+        AtivarNotificacoes.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        AtivarNotificacoes.setForeground(new java.awt.Color(68, 68, 68));
+        AtivarNotificacoes.setText("Ativar notificações");
+        AtivarNotificacoes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AtivarNotificacoesActionPerformed(evt);
+            }
+        });
+        jPanel1.add(AtivarNotificacoes, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 104, 140, 20));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 410, 300));
+
+        pack();
+    }// </editor-fold>                        
+
+    private void EscolherTemaActionPerformed(java.awt.event.ActionEvent evt) {                                             
+        // TODO add your handling code here: 
+        String escolha = (String) EscolherTema.getSelectedItem();
+        if ("Noite".equals(escolha)) {
+                getContentPane().setBackground(Color.BLACK);
+        jPanel1.setBackground(Color.DARK_GRAY);
+        AtivarNotificacoes.setBackground(Color.DARK_GRAY);
+        AtivarNotificacoes.setForeground(Color.WHITE);
+        SalvarAlteracoes.setBackground(Color.DARK_GRAY);
+        SalvarAlteracoes.setForeground(Color.WHITE);
+        AjustesdoSistema.setForeground(Color.WHITE);
+        TextoTema.setForeground(Color.WHITE);
+        EscolherTema.setBackground(Color.GRAY);
+        EscolherTema.setForeground(Color.WHITE);
+        AjustesdoSistema.setBackground(Color.DARK_GRAY); 
+        SalvarAlteracoes.setBackground(Color.DARK_GRAY); 
+        jPanel8.setBackground(Color.DARK_GRAY);
+} else {
+        getContentPane().setBackground(Color.WHITE);
+        jPanel1.setBackground(Color.LIGHT_GRAY);
+        AtivarNotificacoes.setBackground(new Color(33, 150, 243));
+        AtivarNotificacoes.setForeground(Color.WHITE);
+        SalvarAlteracoes.setBackground(Color.LIGHT_GRAY);
+        SalvarAlteracoes.setForeground(Color.BLACK);
+        AjustesdoSistema.setForeground(Color.BLACK);
+        TextoTema.setForeground(Color.BLACK);
+        EscolherTema.setBackground(Color.WHITE);
+        EscolherTema.setForeground(Color.BLACK);
+        AjustesdoSistema.setBackground(Color.LIGHT_GRAY); 
+        SalvarAlteracoes.setBackground(Color.LIGHT_GRAY); 
+        jPanel8.setBackground(Color.LIGHT_GRAY);
+    }
+    repaint();
+       
+    }                                            
+
+    private void SalvarAlteracoesActionPerformed(java.awt.event.ActionEvent evt) {                                                 
+        // TODO add your handling code here:
+        boolean notificacoesAtivadas = AtivarNotificacoes.isSelected();
+    String temaSelecionado = (String) EscolherTema.getSelectedItem();
+    String mensagem = "Preferências salvas:\n"
+                    + "- Notificações: " + (notificacoesAtivadas ? "Ativadas" : "Desativadas") + "\n"
+                    + "- Tema: " + temaSelecionado;
+    javax.swing.JOptionPane.showMessageDialog(this, mensagem, "Preferências salvas!", javax.swing.JOptionPane.INFORMATION_MESSAGE);
+    SalvarAlteracoes.setSelected(false);
+    }                                                
+
+    private void AtivarNotificacoesActionPerformed(java.awt.event.ActionEvent evt) {                                                   
+        // TODO add your handling code here:
+        if (AtivarNotificacoes.isSelected()) {
+    javax.swing.JOptionPane.showMessageDialog(this, "Notificações ativadas!");
+        } else {
+    javax.swing.JOptionPane.showMessageDialog(this, "Notificações desativadas!");
+}
+    }                                                  
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(TelaConfiguracoes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(TelaConfiguracoes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(TelaConfiguracoes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(TelaConfiguracoes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new TelaConfiguracoes().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify                     
+    private javax.swing.JLabel AjustesdoSistema;
+    private javax.swing.JCheckBox AtivarNotificacoes;
+    private javax.swing.JComboBox<String> EscolherTema;
+    private javax.swing.JCheckBox SalvarAlteracoes;
+    private javax.swing.JLabel TextoTema;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel8;
+    // End of variables declaration                   
+}
