@@ -1,0 +1,13 @@
+package com.mycompany.abaprincipal;
+
+import javax.swing.SwingUtilities;
+
+public class TelaPrincipalCodigo {
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            TelaPrincipal tela = new TelaPrincipal();  // Aqui agora está correto
+            tela.setLocationRelativeTo(null);          // Centraliza na tela
+            tela.setVisible(true);                     // Exibe a janela
+        });
+    }
+}
