@@ -10,16 +10,29 @@ public class AbaPresenca {
         LoginFrame.setLocationRelativeTo(null); 
         
         ListaAluno Tabela = new ListaAluno();
-        
-        Tabela.AddAluno("Aluno1");
-        
-        Tabela.MudarNota("Aluno1","A1",20);
-        Tabela.MudarNota("Aluno1","A2",10);
-        Tabela.MudarNota("Aluno1","A3",25);
-        Tabela.MudarFalta("Aluno1",5);
-        
-        Tabela.ListaTabela();
-        
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(JFrameTabelaA3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(JFrameTabelaA3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(JFrameTabelaA3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(JFrameTabelaA3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+      
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new JFrameTabelaA3().setVisible(true);
+            }
+        });
+    
         Aluno aluno1 = new Aluno("Ezequiel", 20);
         aluno1.setFaltas(5);
         
