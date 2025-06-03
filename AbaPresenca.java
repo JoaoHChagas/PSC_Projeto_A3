@@ -1,6 +1,9 @@
 
 package pessoa;
 
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+
 public class AbaPresenca {
     public static void main(String[] args){
         
