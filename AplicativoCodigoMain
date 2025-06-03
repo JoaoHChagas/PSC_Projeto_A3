@@ -35,15 +35,12 @@ public class AbaPresenca {
                 new JFrameTabelaA3().setVisible(true);
             }
         });
-    
-        Aluno aluno1 = new Aluno("Ezequiel", 20);
-        aluno1.setFaltas(5);
+          
+        Aluno aluno1 = new Aluno("Ezequiel", 20, 5);
         
-        Aluno aluno2 = new Aluno("Enzo", 20);
-        aluno2.setFaltas(3);
-        
-        Aluno aluno3 = new Aluno("Joao", 20);
-        aluno3.setFaltas(6);
+        Aluno aluno2 = new Aluno("Enzo", 20, 3);
+      
+        Aluno aluno3 = new Aluno("Joao", 20, 6);
         
         Professor professor = new Professor("Hissamu");
         professor.verificarFaltas(aluno1);
@@ -51,11 +48,23 @@ public class AbaPresenca {
         professor.verificarFaltas(aluno3);
         
         GraficoPresenca grafico = new GraficoPresenca();
-        grafico.gerarGrafico(aluno1);// gráfico individual
-        grafico.gerarGrafico(aluno2);// gráfico individual
-        grafico.gerarGrafico(aluno3);// gráfico individual
-                
-    } 
+        criarJanelaGrafico(grafico, aluno1);
+        criarJanelaGrafico(grafico, aluno2);
+        criarJanelaGrafico(grafico, aluno3);
+        }
+        private static void criarJanelaGrafico(GraficoPresenca grafico, Aluno aluno) {
+        ChartPanel chartPanel = (ChartPanel) grafico.gerarGrafico(aluno.getPresencas(), aluno.getFaltas());
+
+        JFrame frame = new JFrame("Presen a de " + aluno.getNome());
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(490, 540);
+        frame.setContentPane(chartPanel);
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
+       
+    }
+    
 }
+       
     
 
