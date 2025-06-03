@@ -42,8 +42,4 @@ public class Aluno extends Pessoa {
     
 }
 
-    public double getPorcentagemFaltas(){
-        return (faltas * 100.0) / totalAulas;
-    }
-    
-}
+   
