@@ -10,25 +10,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
     public TelaPrincipal() {
         initComponents();
-        URL url = getClass().getResource("/com/mycompany/abaprincipal/engrenagem.png");
-        System.out.println("Caminho da imagem: " + url);
-        ImageIcon icon = new ImageIcon(getClass().getResource("/images/engrenagem.png"));
-            Image image = icon.getImage().getScaledInstance(32, 32, Image.SCALE_SMOOTH);
-            EngrenagemIcone.setIcon(new ImageIcon(image));
             
-            try {
-    InputStream is = getClass().getResourceAsStream("/fonts/LEMONMILK-Bold.otf");
-    System.out.println("Fonte carregada: " + (is != null));
-    Font LEMONMILK = Font.createFont(Font.TRUETYPE_FONT, is).deriveFont(24f);
-
-    educontrol.setFont(LEMONMILK);
-    areadoaluno.setFont(LEMONMILK);
     
-    } catch (Exception e) {
-    e.printStackTrace();
 }
-            }
-            
+   
     
 
 
@@ -38,17 +23,16 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         PainelMenu = new javax.swing.JPanel();
         PainelMenu1 = new javax.swing.JPanel();
-        jButton8 = new javax.swing.JButton();
         educontrol = new javax.swing.JLabel();
-        jButton10 = new javax.swing.JButton();
         jButton11 = new javax.swing.JButton();
+        areadoaluno1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         areadoaluno = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
-        EngrenagemIcone = new javax.swing.JButton();
+        jButton12 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -57,19 +41,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         PainelMenu1.setBackground(new java.awt.Color(0, 102, 102));
 
-        jButton8.setBackground(new java.awt.Color(21, 77, 81));
-        jButton8.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jButton8.setForeground(new java.awt.Color(255, 255, 255));
-        jButton8.setText("Professores");
-        jButton8.setActionCommand("Tabela");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
-            }
-        });
-
         educontrol.setBackground(new java.awt.Color(242, 255, 255));
-        educontrol.setFont(new java.awt.Font("Lucida Console", 1, 24)); // NOI18N
+        educontrol.setFont(new java.awt.Font("Lucida Console", 1, 36)); // NOI18N
         educontrol.setForeground(new java.awt.Color(255, 255, 255));
         educontrol.setText("EDUCONTROL");
         educontrol.setAlignmentX(40.0F);
@@ -77,16 +50,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
         educontrol.setMaximumSize(new java.awt.Dimension(40, 40));
         educontrol.setMinimumSize(new java.awt.Dimension(40, 40));
         educontrol.setPreferredSize(new java.awt.Dimension(180, 30));
-
-        jButton10.setBackground(new java.awt.Color(21, 77, 81));
-        jButton10.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jButton10.setForeground(new java.awt.Color(255, 255, 255));
-        jButton10.setText("Alunos");
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
-            }
-        });
 
         jButton11.setBackground(new java.awt.Color(21, 77, 81));
         jButton11.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
@@ -99,32 +62,39 @@ public class TelaPrincipal extends javax.swing.JFrame {
             }
         });
 
+        areadoaluno1.setBackground(new java.awt.Color(255, 255, 255));
+        areadoaluno1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        areadoaluno1.setForeground(new java.awt.Color(0, 153, 153));
+        areadoaluno1.setText("Área do Aluno");
+        areadoaluno1.setAlignmentX(1.0F);
+        areadoaluno1.setAlignmentY(1.0F);
+        areadoaluno1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        areadoaluno1.setPreferredSize(new java.awt.Dimension(150, 30));
+
         javax.swing.GroupLayout PainelMenu1Layout = new javax.swing.GroupLayout(PainelMenu1);
         PainelMenu1.setLayout(PainelMenu1Layout);
         PainelMenu1Layout.setHorizontalGroup(
             PainelMenu1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PainelMenu1Layout.createSequentialGroup()
-                .addGap(68, 68, 68)
-                .addGroup(PainelMenu1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PainelMenu1Layout.createSequentialGroup()
-                .addContainerGap(59, Short.MAX_VALUE)
-                .addComponent(educontrol, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(58, 58, 58))
+                .addGroup(PainelMenu1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PainelMenu1Layout.createSequentialGroup()
+                        .addGap(44, 44, 44)
+                        .addComponent(educontrol, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(PainelMenu1Layout.createSequentialGroup()
+                        .addGap(74, 74, 74)
+                        .addGroup(PainelMenu1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(areadoaluno1, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(46, Short.MAX_VALUE))
         );
         PainelMenu1Layout.setVerticalGroup(
             PainelMenu1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PainelMenu1Layout.createSequentialGroup()
-                .addGap(107, 107, 107)
+                .addGap(118, 118, 118)
                 .addComponent(educontrol, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(49, 49, 49)
-                .addComponent(jButton10)
-                .addGap(18, 18, 18)
-                .addComponent(jButton8)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(areadoaluno1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton11)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -186,14 +156,16 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(0, 102, 102));
 
-        EngrenagemIcone.setBackground(new java.awt.Color(21, 77, 81));
-        EngrenagemIcone.setForeground(new java.awt.Color(21, 77, 81));
-        EngrenagemIcone.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/engrenagem.png"))); // NOI18N
-        EngrenagemIcone.setBorder(null);
-        EngrenagemIcone.setBorderPainted(false);
-        EngrenagemIcone.setContentAreaFilled(false);
-        EngrenagemIcone.setFocusable(false);
-        EngrenagemIcone.setRequestFocusEnabled(false);
+        jButton12.setBackground(new java.awt.Color(21, 77, 81));
+        jButton12.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jButton12.setForeground(new java.awt.Color(255, 255, 255));
+        jButton12.setText("Ajustes");
+        jButton12.setToolTipText("");
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -201,11 +173,13 @@ public class TelaPrincipal extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(EngrenagemIcone, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jButton12))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EngrenagemIcone, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jButton12))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -214,17 +188,14 @@ public class TelaPrincipal extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(168, Short.MAX_VALUE)
+                .addContainerGap(192, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(201, 201, 201))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(areadoaluno, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(76, 76, 76))))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jButton4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(areadoaluno, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(201, 201, 201))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -238,7 +209,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(35, Short.MAX_VALUE))
+                .addContainerGap(34, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -259,14 +230,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>                        
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
-    }                                        
-
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        // TODO add your handling code here:
-    }                                         
-
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         // TODO add your handling code here:
     }                                         
@@ -278,6 +241,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // TODO add your handling code here:
     }                                        
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        // TODO add your handling code here:
+    }                                         
 
     /**
      * @param args the command line arguments
@@ -316,17 +283,16 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify                     
-    private javax.swing.JButton EngrenagemIcone;
     private javax.swing.JPanel PainelMenu;
     private javax.swing.JPanel PainelMenu1;
     private javax.swing.JLabel areadoaluno;
+    private javax.swing.JLabel areadoaluno1;
     private javax.swing.JLabel educontrol;
-    private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration                   
