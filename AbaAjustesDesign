@@ -1,171 +1,169 @@
-package com.mycompany.projetoa3;
-import java.awt.Color;
-import java.awt.Window;
+package com.mycompany.abaprincipal;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
-public class TelaConfiguracoes extends javax.swing.JFrame {
-    public TelaConfiguracoes() {
+import java.awt.Image;
+import java.net.URL;
+import java.awt.Font;
+import java.io.InputStream;
+public class TelaAjustes extends javax.swing.JFrame {
+
+    public TelaAjustes() {
         initComponents();
-    }
+            
+    
+}
+   
+    
+
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
-        jPanel2 = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
-        jPanel8 = new javax.swing.JPanel();
-        educontrol = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        TextoTema = new javax.swing.JLabel();
-        EscolherTema = new javax.swing.JComboBox<>();
-        jPanel4 = new javax.swing.JPanel();
-        educontrol3 = new javax.swing.JLabel();
-        BotaoSalvarAlteracoes = new javax.swing.JCheckBox();
-        educontrol2 = new javax.swing.JLabel();
-
-        jPanel2.setBackground(new java.awt.Color(204, 204, 204));
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 200, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 60, Short.MAX_VALUE)
-        );
-
-        jPanel3.setBackground(new java.awt.Color(204, 204, 204));
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 200, Short.MAX_VALUE)
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 60, Short.MAX_VALUE)
-        );
-
-        jPanel8.setBackground(new java.awt.Color(204, 204, 204));
-        jPanel8.setAlignmentX(0.4F);
-        jPanel8.setAlignmentY(0.4F);
-        jPanel8.setPreferredSize(new java.awt.Dimension(160, 40));
-
-        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
-        jPanel8.setLayout(jPanel8Layout);
-        jPanel8Layout.setHorizontalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 160, Short.MAX_VALUE)
-        );
-        jPanel8Layout.setVerticalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 40, Short.MAX_VALUE)
-        );
-
-        educontrol.setBackground(new java.awt.Color(242, 255, 255));
-        educontrol.setFont(new java.awt.Font("Lucida Console", 1, 36)); // NOI18N
-        educontrol.setForeground(new java.awt.Color(255, 255, 255));
-        educontrol.setText("EDUCONTROL");
-        educontrol.setAlignmentX(40.0F);
-        educontrol.setAlignmentY(40.0F);
-        educontrol.setMaximumSize(new java.awt.Dimension(40, 40));
-        educontrol.setMinimumSize(new java.awt.Dimension(40, 40));
-        educontrol.setPreferredSize(new java.awt.Dimension(180, 30));
+        PainelMenu = new javax.swing.JPanel();
+        PainelVerde = new javax.swing.JPanel();
+        NomeEducontrol = new javax.swing.JLabel();
+        TextoAbaAjustes = new javax.swing.JLabel();
+        BarraCimaVerdeClaro = new javax.swing.JPanel();
+        BotaoVoltar = new javax.swing.JButton();
+        BotaoDeslogar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
-        jPanel1.setForeground(new java.awt.Color(0, 153, 153));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        PainelMenu.setBackground(new java.awt.Color(0, 102, 102));
 
-        TextoTema.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        TextoTema.setForeground(new java.awt.Color(255, 255, 255));
-        TextoTema.setText("Tema:");
-        TextoTema.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        jPanel1.add(TextoTema, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 140, 110, 40));
+        PainelVerde.setBackground(new java.awt.Color(0, 102, 102));
 
-        EscolherTema.setBackground(new java.awt.Color(0, 102, 102));
-        EscolherTema.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        EscolherTema.setForeground(new java.awt.Color(255, 255, 255));
-        EscolherTema.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Manhã", "Noite" }));
-        EscolherTema.addActionListener(new java.awt.event.ActionListener() {
+        NomeEducontrol.setBackground(new java.awt.Color(242, 255, 255));
+        NomeEducontrol.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        NomeEducontrol.setForeground(new java.awt.Color(255, 255, 255));
+        NomeEducontrol.setText("EDUCONTROL");
+        NomeEducontrol.setAlignmentX(40.0F);
+        NomeEducontrol.setAlignmentY(40.0F);
+        NomeEducontrol.setMaximumSize(new java.awt.Dimension(40, 40));
+        NomeEducontrol.setMinimumSize(new java.awt.Dimension(40, 40));
+        NomeEducontrol.setPreferredSize(new java.awt.Dimension(180, 30));
+
+        TextoAbaAjustes.setBackground(new java.awt.Color(255, 255, 255));
+        TextoAbaAjustes.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        TextoAbaAjustes.setForeground(new java.awt.Color(0, 153, 153));
+        TextoAbaAjustes.setText("Aba de Ajustes");
+        TextoAbaAjustes.setAlignmentX(1.0F);
+        TextoAbaAjustes.setAlignmentY(1.0F);
+        TextoAbaAjustes.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        TextoAbaAjustes.setPreferredSize(new java.awt.Dimension(150, 30));
+
+        BarraCimaVerdeClaro.setBackground(new java.awt.Color(0, 153, 153));
+        BarraCimaVerdeClaro.setForeground(new java.awt.Color(0, 153, 153));
+
+        BotaoVoltar.setBackground(new java.awt.Color(21, 77, 81));
+        BotaoVoltar.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        BotaoVoltar.setForeground(new java.awt.Color(255, 255, 255));
+        BotaoVoltar.setText("Voltar");
+        BotaoVoltar.setToolTipText("");
+        BotaoVoltar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                EscolherTemaActionPerformed(evt);
+                BotaoVoltarActionPerformed(evt);
             }
         });
-        jPanel1.add(EscolherTema, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 140, 130, 50));
 
-        jPanel4.setBackground(new java.awt.Color(0, 102, 102));
-
-        educontrol3.setBackground(new java.awt.Color(242, 255, 255));
-        educontrol3.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        educontrol3.setForeground(new java.awt.Color(255, 255, 255));
-        educontrol3.setText("EDUCONTROL");
-        educontrol3.setAlignmentX(40.0F);
-        educontrol3.setAlignmentY(40.0F);
-        educontrol3.setMaximumSize(new java.awt.Dimension(40, 40));
-        educontrol3.setMinimumSize(new java.awt.Dimension(40, 40));
-        educontrol3.setPreferredSize(new java.awt.Dimension(180, 30));
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(90, Short.MAX_VALUE)
-                .addComponent(educontrol3, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(77, 77, 77))
+        javax.swing.GroupLayout BarraCimaVerdeClaroLayout = new javax.swing.GroupLayout(BarraCimaVerdeClaro);
+        BarraCimaVerdeClaro.setLayout(BarraCimaVerdeClaroLayout);
+        BarraCimaVerdeClaroLayout.setHorizontalGroup(
+            BarraCimaVerdeClaroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BarraCimaVerdeClaroLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(BotaoVoltar, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(educontrol3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(15, Short.MAX_VALUE))
+        BarraCimaVerdeClaroLayout.setVerticalGroup(
+            BarraCimaVerdeClaroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BarraCimaVerdeClaroLayout.createSequentialGroup()
+                .addComponent(BotaoVoltar, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 410, 60));
-
-        BotaoSalvarAlteracoes.setBackground(new java.awt.Color(0, 153, 153));
-        BotaoSalvarAlteracoes.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        BotaoSalvarAlteracoes.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoSalvarAlteracoes.setText("Salvar alterações");
-        BotaoSalvarAlteracoes.addActionListener(new java.awt.event.ActionListener() {
+        BotaoDeslogar.setBackground(new java.awt.Color(21, 77, 81));
+        BotaoDeslogar.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        BotaoDeslogar.setForeground(new java.awt.Color(255, 255, 255));
+        BotaoDeslogar.setText("Deslogar");
+        BotaoDeslogar.setToolTipText("");
+        BotaoDeslogar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotaoSalvarAlteracoesActionPerformed(evt);
+                BotaoDeslogarActionPerformed(evt);
             }
         });
-        jPanel1.add(BotaoSalvarAlteracoes, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 310, 40));
 
-        educontrol2.setBackground(new java.awt.Color(242, 255, 255));
-        educontrol2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        educontrol2.setForeground(new java.awt.Color(0, 102, 102));
-        educontrol2.setText("Ajustes do Sistema");
-        educontrol2.setAlignmentX(40.0F);
-        educontrol2.setAlignmentY(40.0F);
-        educontrol2.setMaximumSize(new java.awt.Dimension(40, 40));
-        educontrol2.setMinimumSize(new java.awt.Dimension(40, 40));
-        educontrol2.setPreferredSize(new java.awt.Dimension(180, 30));
-        jPanel1.add(educontrol2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 330, 50));
+        javax.swing.GroupLayout PainelVerdeLayout = new javax.swing.GroupLayout(PainelVerde);
+        PainelVerde.setLayout(PainelVerdeLayout);
+        PainelVerdeLayout.setHorizontalGroup(
+            PainelVerdeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(BarraCimaVerdeClaro, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PainelVerdeLayout.createSequentialGroup()
+                .addContainerGap(186, Short.MAX_VALUE)
+                .addGroup(PainelVerdeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PainelVerdeLayout.createSequentialGroup()
+                        .addComponent(NomeEducontrol, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(178, 178, 178))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PainelVerdeLayout.createSequentialGroup()
+                        .addComponent(TextoAbaAjustes, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(209, 209, 209))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PainelVerdeLayout.createSequentialGroup()
+                        .addComponent(BotaoDeslogar, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(201, 201, 201))))
+        );
+        PainelVerdeLayout.setVerticalGroup(
+            PainelVerdeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PainelVerdeLayout.createSequentialGroup()
+                .addComponent(BarraCimaVerdeClaro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(35, 35, 35)
+                .addComponent(NomeEducontrol, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(TextoAbaAjustes, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(BotaoDeslogar, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(70, Short.MAX_VALUE))
+        );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 410, 300));
+        javax.swing.GroupLayout PainelMenuLayout = new javax.swing.GroupLayout(PainelMenu);
+        PainelMenu.setLayout(PainelMenuLayout);
+        PainelMenuLayout.setHorizontalGroup(
+            PainelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(PainelVerde, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        PainelMenuLayout.setVerticalGroup(
+            PainelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(PainelVerde, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(PainelMenu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(PainelMenu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
 
         pack();
     }// </editor-fold>                        
 
-    private void EscolherTemaActionPerformed(java.awt.event.ActionEvent evt) {                                             
+    private void BotaoVoltarActionPerformed(java.awt.event.ActionEvent evt) {                                            
         // TODO add your handling code here:
+    }                                           
 
-    }                                            
+    private void BotaoDeslogarActionPerformed(java.awt.event.ActionEvent evt) {                                              
+        // TODO add your handling code here:
+    }                                             
 
-    private void BotaoSalvarAlteracoesActionPerformed(java.awt.event.ActionEvent evt) {                                                      
-
-    Window window = SwingUtilities.getWindowAncestor(BotaoSalvarAlteracoes);
-        window.dispose();
-    }                                                     
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -180,33 +178,35 @@ public class TelaConfiguracoes extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(TelaConfiguracoes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaAjustes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(TelaConfiguracoes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaAjustes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(TelaConfiguracoes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaAjustes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(TelaConfiguracoes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaAjustes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+
+        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new TelaConfiguracoes().setVisible(true);
+                new TelaAjustes().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify                     
-    private javax.swing.JCheckBox BotaoSalvarAlteracoes;
-    private javax.swing.JComboBox<String> EscolherTema;
-    private javax.swing.JLabel TextoTema;
-    private javax.swing.JLabel educontrol;
-    private javax.swing.JLabel educontrol2;
-    private javax.swing.JLabel educontrol3;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel BarraCimaVerdeClaro;
+    private javax.swing.JButton BotaoDeslogar;
+    private javax.swing.JButton BotaoVoltar;
+    private javax.swing.JLabel NomeEducontrol;
+    private javax.swing.JPanel PainelMenu;
+    private javax.swing.JPanel PainelVerde;
+    private javax.swing.JLabel TextoAbaAjustes;
     // End of variables declaration                   
+
 }
